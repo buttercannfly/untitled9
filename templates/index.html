@@ -1,21 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>project1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FindBili - download bilibili video without client</title>
+<style type="text/css">
+<!--
+a {color: #333333}
+a img {border:none;};
+.STYLE2 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+}
+.STYLE7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+.STYLE8 {font-family: "Courier New", Courier, monospace}
+
+.STYLE9 {
+	color: #FFFFFF;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+}
+.STYLE10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.STYLE11 {font-family: Arial, Helvetica, sans-serif}
+</style>
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/base64.js" type="text/javascript"></script>
+
+
 </head>
-<body>
-    <div>
-        <form class="align-center" method="post">
-            <p class="align-center">输入番剧url</p>
-            <input id="input" name="input"><br>
-            <input id="bt" name="bt" type="submit">
-        </form>
-    </div>
-    <div>
-        {% for movie in list %}
-            <a href="/download?movie={{ movie }}">{{ movie }}</a>
-        {% endfor %}
-    </div>
+
+<body style="margin:0; padding:0;">
+<div class="STYLE9" style=" height:35px; width:100%; background-color:#000000">
+  <div align="right" class="STYLE10" style="line-height:35px;" >  download bilibili &amp; video without client&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+<div align="center">
+  <p>&nbsp;</p>
+  <table width="780" border="0">
+    <tr>
+      <td><span class="STYLE7">Please input your video link:</span></td>
+    </tr>
+    
+    <tr>
+      <td><form method="post">
+          <label></label>
+
+          <div align="left">
+            <input name="input" type="text" id="input" size="80" style="height:30px" />
+            <input type="submit" name="Submit" value="  DOWNLOAD  " style="border:none;background-color:#C81F20; color:#FFFFFF; height:35px; font-weight:BOLD" />
+          </div>
+      </form> </td>
+    </tr>
+    <tr>
+      <td><span class="STYLE2"><strong>Example</strong> :<a>https://search.bilibili.com/all?keyword=%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82</a></span></td>
+    </tr>
+      <tr>
+          <a href="/list">视频库</a>
+      </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
 </body>
 </html>

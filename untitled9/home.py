@@ -12,9 +12,6 @@ def index(request):
     path = os.path.abspath('.')
     video_dir = str(path) + r"\bilibili_video"
     dirs = os.listdir(video_dir)
-    list=[]
-    # for files in dirs:
-    #     print(files)
     context['list'] = dirs
     if request.method == 'POST':
         url = request.POST['input']
@@ -35,3 +32,12 @@ def download(request):
     response['Content-Disposition'] = 'attachment; filename="1.mp4"'
     return response
 
+
+def get_list(request):
+    context = {}
+    path = os.path.abspath('.')
+    video_dir = str(path) + r"\bilibili_video"
+    dirs = os.listdir(video_dir)
+    context['list'] = dirs
+    template = "videos.html"
+    return render(request, template, context)
