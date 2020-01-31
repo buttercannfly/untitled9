@@ -12,5 +12,10 @@
             <input id="bt" name="bt" type="submit">
         </form>
     </div>
+    <div>
+        {% for movie in list %}
+            <a href="/download?movie={{ movie }}">{{ movie }}</a>
+        {% endfor %}
+    </div>
 </body>
 </html>

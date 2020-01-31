@@ -22,4 +22,5 @@ from untitled9 import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', home.index),
+    path('download/', home.download)
 ]
