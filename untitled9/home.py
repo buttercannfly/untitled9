@@ -10,9 +10,9 @@ from untitled9.func import get_flv_by_url
 def index(request):
     context = {}
     path = os.path.abspath('.')
-    video_dir = str(path) + r"\bilibili_video"
-    dirs = os.listdir(video_dir)
-    context['list'] = dirs
+    # video_dir = str(path) + r"bilibili_video"
+    # dirs = os.listdir(video_dir)
+    # context['list'] = dirs
     if request.method == 'POST':
         url = request.POST['input']
         get_flv_by_url(url)
@@ -36,7 +36,7 @@ def download(request):
 def get_list(request):
     context = {}
     path = os.path.abspath('.')
-    video_dir = str(path) + r"\bilibili_video"
+    video_dir = str(path) + r"bilibili_video"
     dirs = os.listdir(video_dir)
     context['list'] = dirs
     template = "videos.html"
